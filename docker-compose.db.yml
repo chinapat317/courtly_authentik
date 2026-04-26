@@ -32,3 +32,6 @@ services:
       - ../cert/auth_db/pg_hba.conf:/var/lib/postgresql/certs/pg_hba.conf:ro
     networks:
       - authentik
+networks:
+  authentik:
+    external: true
